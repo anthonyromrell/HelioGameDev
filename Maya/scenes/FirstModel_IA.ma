@@ -1,6 +1,6 @@
 //Maya ASCII 2018 scene
 //Name: FirstModel_IA.ma
-//Last modified: Thu, Aug 10, 2017 07:15:39 PM
+//Last modified: Thu, Aug 10, 2017 07:19:52 PM
 //Codeset: UTF-8
 requires maya "2018";
 currentUnit -l centimeter -a degree -t film;
@@ -13,19 +13,19 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "DB0717DD-7D4F-CE6B-107A-C29532257C42";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -33.032031274337882 -26.330329799415903 -2.626574215411992 ;
-	setAttr ".r" -type "double3" 142.86903448625381 90.002235766133836 -3.2601957706873632e-10 ;
-	setAttr ".rp" -type "double3" 0 4.4408920985006262e-15 7.1054273576010019e-15 ;
-	setAttr ".rpt" -type "double3" -4.2020705725979666e-15 -1.7174246359921433e-14 -4.741648511615122e-17 ;
+	setAttr ".t" -type "double3" -24.336734084363794 -9.4488117808443803 16.55304715462842 ;
+	setAttr ".r" -type "double3" -15.780807785664443 53.20281155247816 -179.99999999999991 ;
+	setAttr ".rp" -type "double3" -8.8817841970012523e-16 -8.8817841970012523e-16 0 ;
+	setAttr ".rpt" -type "double3" -1.7533617957512936e-15 -3.2023607524259162e-15 8.3654383640911518e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "24C655A3-A149-9A69-DAB7-C6B984E2C19A";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 43.344099157798951;
+	setAttr ".coi" 35.256617276311097;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" 1.5243902055260889 -0.16614312203558512 -2.6279226581340653 ;
+	setAttr ".tp" -type "double3" 2.8312891259470696 0.13950452614056164 -3.7691517177744851 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 	setAttr ".ai_translator" -type "string" "perspective";
 createNode transform -s -n "top";
@@ -78,6 +78,19 @@ createNode camera -s -n "sideShape" -p "side";
 	setAttr ".hc" -type "string" "viewSet -s %camera";
 	setAttr ".o" yes;
 	setAttr ".ai_translator" -type "string" "orthographic";
+createNode transform -n "pCube1";
+	rename -uid "3C00DDDE-564A-3180-6298-5A9172D46ED8";
+createNode mesh -n "pCubeShape1" -p "pCube1";
+	rename -uid "B6B469F9-704B-17FC-61FB-7BBDE1336F30";
+	setAttr -k off ".v";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+	setAttr ".ai_translator" -type "string" "polymesh";
 createNode lightLinker -s -n "lightLinker1";
 	rename -uid "95D8886C-F14E-B474-AD4F-AA94C294959A";
 	setAttr -s 2 ".lnk";
@@ -141,6 +154,9 @@ createNode script -n "sceneConfigurationScriptNode";
 	rename -uid "DDA870F1-4749-8E69-2048-42A2C86900D6";
 	setAttr ".b" -type "string" "playbackOptions -min 1 -max 120 -ast 1 -aet 200 ";
 	setAttr ".st" 6;
+createNode polyCube -n "polyCube1";
+	rename -uid "176A5278-0F42-4183-7CF7-F0A382926593";
+	setAttr ".cuv" 4;
 select -ne :time1;
 	setAttr ".o" 1;
 	setAttr ".unw" 1;
@@ -171,6 +187,7 @@ select -ne :hardwareRenderGlobals;
 	setAttr ".btrs" 512;
 select -ne :ikSystem;
 	setAttr -s 4 ".sol";
+connectAttr "polyCube1.out" "pCubeShape1.i";
 relationship "link" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
 relationship "shadowLink" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
@@ -178,4 +195,5 @@ relationship "shadowLink" ":lightLinker1" ":initialParticleSE.message" ":default
 connectAttr "layerManager.dli[0]" "defaultLayer.id";
 connectAttr "renderLayerManager.rlmi[0]" "defaultRenderLayer.rlid";
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
+connectAttr "pCubeShape1.iog" ":initialShadingGroup.dsm" -na;
 // End of FirstModel_IA.ma
