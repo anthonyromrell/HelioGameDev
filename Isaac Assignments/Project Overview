@@ -1,0 +1,19 @@
+Project Overview
+
+Spark Dash
+
+You are a spark losing power while traveling down a broken twisted/braided powerline. You can bounce between different braids to travel further down the line. Some lines will have power running through them allowing you to regain power. Traveling on non powered braids will sap some of your energy, How ever travling over a break in a line will sap half of your remaining energy.
+
+How far can you make it?
+
+Powerline
+	Random powered lines
+	Broken lines
+
+Spark
+	Health 
+	Distance
+
+Power Ups
+	Power Banks - Cells that holds excess power when already at full health. Once full Max health will increase.
+	Power Surge - A Surge of power that does not allow your spark to lose energy.
