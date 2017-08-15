@@ -1,6 +1,6 @@
 //Maya ASCII 2018 scene
 //Name: PowerBank.ma
-//Last modified: Tue, Aug 15, 2017 02:04:19 PM
+//Last modified: Tue, Aug 15, 2017 02:06:39 PM
 //Codeset: UTF-8
 requires maya "2018";
 requires -nodeType "polyDisc" "modelingToolkit" "0.0.0.0";
@@ -14,8 +14,8 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "1B22BA8B-3C40-4D1D-BA36-5DA81DDDF701";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 0.30514373530626043 18.630511759078853 0.0010651569026002665 ;
-	setAttr ".r" -type "double3" 269.06164727192419 629.7999999996382 0 ;
+	setAttr ".t" -type "double3" 1.4186585683097634 -18.574588450448623 0.4014399107626474 ;
+	setAttr ".r" -type "double3" 445.46164731049379 434.19999999952648 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "1077E8A6-1A41-36EF-62B3-51928B2CC8CA";
 	setAttr -k off ".v" no;
