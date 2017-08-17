@@ -1,0 +1,34 @@
+Unity Dev Notes
+
+Maya Shortcut Keys
+==================
+
+D Key moves the handle up and down. 
+
+V Key Snaps to vertex
+
+X Key Snapsto grid
+
+Tool options to fine tune Polygons.
+
+Target Welding - Delete faces and go to Mesh tools > Target weld. Drag Edges or vertexs together. (change options to weld to the center)
+
+Mesh combine.
+
+B Key is a soft move
+
+Grow selection select a face hold shift + '.'
+
+Selection
+
+Click one face >> Shift double click on another face to select all faces in edge loop. 
+
+
+Character modeling 
+
+1. cube 
+2. remname
+3. position
+4. Change center
+5. Parenting
+6. Freeze Transformations
