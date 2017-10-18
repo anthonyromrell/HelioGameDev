@@ -1,7 +1,19 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Unity/Helio Game Dev/Assets/Textures/Bear_Normal.png.meta
+<<<<<<< HEAD
+guid: c1c86432d2c7bb8428c482a27b1775c2
+timeCreated: 1503168114
+licenseType: Free
+=======
+guid: d5536d15e8a1a4a2f9a9ef879bd378a9
+timeCreated: 1503167891
+licenseType: Pro
+>>>>>>> master
+=======
 guid: 133eb4663210a4a4cb12f0afcb1e937b
 timeCreated: 1504670264
 licenseType: Free
+>>>>>>> master:Unity/QuickSplatBarnacules/Assets/Images/BarnculesLeft.png.meta
 TextureImporter:
   fileIDToRecycleName: {}
   serializedVersion: 4
@@ -58,6 +70,8 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+<<<<<<< HEAD
+=======
   - buildTarget: Standalone
     maxTextureSize: 1024
     textureFormat: -1
@@ -82,6 +96,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+>>>>>>> master
   spriteSheet:
     serializedVersion: 2
     sprites: []

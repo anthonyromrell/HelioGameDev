@@ -6,31 +6,57 @@ workspace -fr "images" "images";
 workspace -fr "offlineEdit" "scenes/edits";
 workspace -fr "STEP_ATF Export" "data";
 workspace -fr "furShadowMap" "renderData/fur/furShadowMap";
+<<<<<<< HEAD
+workspace -fr "INVENTOR_ATF Export" "data";
+=======
+>>>>>>> master
 workspace -fr "SVG" "data";
 workspace -fr "scripts" "scripts";
 workspace -fr "STL_ATF" "data";
 workspace -fr "DAE_FBX" "data";
 workspace -fr "shaders" "renderData/shaders";
+<<<<<<< HEAD
+workspace -fr "NX_ATF" "data";
 workspace -fr "furFiles" "renderData/fur/furFiles";
+workspace -fr "CATIAV5_ATF Export" "data";
+=======
+workspace -fr "furFiles" "renderData/fur/furFiles";
+>>>>>>> master
 workspace -fr "OBJ" "data";
 workspace -fr "PARASOLID_ATF Export" "data";
 workspace -fr "FBX export" "data";
 workspace -fr "furEqualMap" "renderData/fur/furEqualMap";
 workspace -fr "BIF" "data";
 workspace -fr "DAE_FBX export" "data";
+<<<<<<< HEAD
+workspace -fr "CATIAV5_ATF" "data";
+=======
+>>>>>>> master
 workspace -fr "SAT_ATF Export" "data";
 workspace -fr "movie" "movies";
 workspace -fr "ASS Export" "data";
 workspace -fr "move" "data";
 workspace -fr "mayaAscii" "scenes";
 workspace -fr "autoSave" "autosave";
+<<<<<<< HEAD
+workspace -fr "NX_ATF Export" "data";
 workspace -fr "sound" "sound";
 workspace -fr "mayaBinary" "scenes";
 workspace -fr "timeEditor" "Time Editor";
+workspace -fr "DWG_ATF" "data";
+=======
+workspace -fr "sound" "sound";
+workspace -fr "mayaBinary" "scenes";
+workspace -fr "timeEditor" "Time Editor";
+>>>>>>> master
 workspace -fr "JT_ATF Export" "data";
 workspace -fr "iprImages" "renderData/iprImages";
 workspace -fr "FBX" "data";
 workspace -fr "renderData" "renderData";
+<<<<<<< HEAD
+workspace -fr "CATIAV4_ATF" "data";
+=======
+>>>>>>> master
 workspace -fr "fileCache" "cache/nCache";
 workspace -fr "eps" "data";
 workspace -fr "3dPaintTextures" "sourceimages/3dPaintTextures";
@@ -40,14 +66,27 @@ workspace -fr "translatorData" "data";
 workspace -fr "particles" "cache/particles";
 workspace -fr "scene" "scenes";
 workspace -fr "SAT_ATF" "data";
+<<<<<<< HEAD
+workspace -fr "PROE_ATF" "data";
+=======
+>>>>>>> master
 workspace -fr "WIRE_ATF Export" "data";
 workspace -fr "sourceImages" "sourceimages";
 workspace -fr "clips" "clips";
 workspace -fr "furImages" "renderData/fur/furImages";
+<<<<<<< HEAD
+workspace -fr "INVENTOR_ATF" "data";
+workspace -fr "STEP_ATF" "data";
+workspace -fr "DWG_ATF Export" "data";
+workspace -fr "depth" "renderData/depth";
+workspace -fr "sceneAssembly" "sceneAssembly";
+workspace -fr "IGES_ATF Export" "data";
+=======
 workspace -fr "STEP_ATF" "data";
 workspace -fr "depth" "renderData/depth";
 workspace -fr "IGES_ATF Export" "data";
 workspace -fr "sceneAssembly" "sceneAssembly";
+>>>>>>> master
 workspace -fr "PARASOLID_ATF" "data";
 workspace -fr "IGES_ATF" "data";
 workspace -fr "teClipExports" "Time Editor/Clip Exports";

@@ -1,7 +1,19 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Unity/Helio Game Dev/Assets/2D Sprites/TurtleController.controller.meta
+<<<<<<< Updated upstream
+guid: 0fe562851bfee4237866e82e1a77c3b2
+timeCreated: 1503455517
+licenseType: Pro
+=======
+guid: 9b7b22fb34f660045b485cf7fb5ede24
+timeCreated: 1503455260
+licenseType: Free
+>>>>>>> Stashed changes
+=======
 guid: d3f826a2a90754899a6d18f98320d32b
 timeCreated: 1503255021
 licenseType: Free
+>>>>>>> master:Unity/QuickSplatBarnacules/Assets/Animations/BoardPiece.controller.meta
 NativeFormatImporter:
   mainObjectFileID: 9100000
   userData: 

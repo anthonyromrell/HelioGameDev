@@ -1,7 +1,18 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Unity/NavMeshIdeas/NavMeshIdeas/Assets/Scripts/GameManager.cs.meta
+<<<<<<< HEAD
+guid: bd25f312fd665e14b9441badd337c5d2
+timeCreated: 1507401034
+licenseType: Free
+=======
+guid: fbfb3e4a1d20f43d78f9c0e4340daca5
+timeCreated: 1507401032
+=======
 guid: 0be994ee8116644968fbc73c05df941b
 timeCreated: 1508007309
+>>>>>>> master:Unity/NavMeshIdeas/NavMeshIdeas/Assets/BuyGold.cs.meta
 licenseType: Pro
+>>>>>>> master
 MonoImporter:
   serializedVersion: 2
   defaultReferences: []

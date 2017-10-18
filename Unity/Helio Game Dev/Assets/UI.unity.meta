@@ -1,7 +1,20 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Unity/Helio Game Dev/Assets/sourceimages.meta
+<<<<<<< Updated upstream
+guid: 43dcbc62bc1c24513b2326dd70c44c0b
+folderAsset: yes
+timeCreated: 1504057935
+=======
 guid: a08d7a760f7854ff090fd268d93bcce5
 timeCreated: 1505588791
+>>>>>>> master:Unity/Helio Game Dev/Assets/UI.unity.meta
 licenseType: Pro
+=======
+guid: cf5e6f99996e95f4396e5c4df806b528
+folderAsset: yes
+timeCreated: 1504058046
+licenseType: Free
+>>>>>>> Stashed changes
 DefaultImporter:
   userData: 
   assetBundleName: 

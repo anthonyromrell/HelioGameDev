@@ -1,0 +1,14 @@
+Make a game about a guy flying to a new world and saving it from monsters and to save the Princess.
+
+Make a couple characters basic movement no speech.
+
+Create 6 Levels: A planet, a space travel level, a mountain area, a wall full of monsters, a desert 
+travel area, and a kingdom.
+
+Create a couple bosses.
+
+Keep it to a more blocky/circular simple design.
+
+Music for each level and a couple extra for menu and credits.
+
+Plan about 6 months to create the whole game.

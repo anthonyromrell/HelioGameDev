@@ -1,8 +1,19 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Unity/Helio Game Dev/Assets/Textures.meta
+<<<<<<< Updated upstream
+guid: 31aad7271fe87434782a17a67598c770
+=======
 guid: a0844d7ee9b344abab6d06daf431824d
+>>>>>>> master:Unity/Helio Game Dev/Assets/Scripts/Statics.meta
 folderAsset: yes
 timeCreated: 1505443999
 licenseType: Pro
+=======
+guid: 2f5e24177e99b6941b723c2aafd2c338
+folderAsset: yes
+timeCreated: 1503451030
+licenseType: Free
+>>>>>>> Stashed changes
 DefaultImporter:
   userData: 
   assetBundleName: 

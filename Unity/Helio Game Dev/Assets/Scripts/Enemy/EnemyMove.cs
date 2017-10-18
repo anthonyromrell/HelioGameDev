@@ -8,22 +8,34 @@ using UnityEngine.AI;
 public class EnemyMove : MonoBehaviour {
 
 	private NavMeshAgent agent;
-	public Transform player;
+	private Transform player;
 
-	// Use this for initialization
-	void Awake () {
+	private bool canFollow = true;
+	 
+	void Awake () 
+	{
+		SendTransform.SendThis += SendTransformHandler;
 		agent = GetComponent<NavMeshAgent>();
-		SendToEnemy.SendTransform += SendTransformHandler;
 	}
 
     private void SendTransformHandler(Transform _player)
     {
-		player = _player;
+        player = _player;
     }
+	void OnTriggerEnter()
+	{
+		StartCoroutine(Follow());
+	}
 
+	void OnTriggerExit()
+	{
+		StopAllCoroutines();
+	}
 
-    // Update is called once per frame
-    void Update () {
-		agent.destination = player.position;
+    IEnumerator Follow () {
+		while(canFollow) {
+			yield return new WaitForFixedUpdate();
+			agent.destination = player.position;
+		}
 	}
 }

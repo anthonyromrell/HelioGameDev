@@ -1,0 +1,399 @@
+fileFormatVersion: 2
+guid: fd6ac8a7ee27deb4083ee6b533cbbe53
+timeCreated: 1503771426
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Body_GRP
+    100002: //RootNode
+    100004: Head
+    100006: L_Foot
+    100008: L_Forearm
+    100010: L_KneeGuard
+    100012: L_LowerLeg
+    100014: L_Palm
+    100016: L_Pinky1
+    100018: L_Pinky2
+    100020: L_Pointer1
+    100022: L_Pointer2
+    100024: L_Ring1
+    100026: L_Ring2
+    100028: L_Shoulder
+    100030: L_Shoulder1
+    100032: L_ShoulderPlates
+    100034: L_Thumb1
+    100036: L_Thumb2
+    100038: L_UpperLeg
+    100040: L_Wrist
+    100042: MIddleBody
+    100044: Pelvis
+    100046: R_Foot
+    100048: R_Forearm
+    100050: R_KneeGuard
+    100052: R_LowerLeg
+    100054: R_Palm
+    100056: R_Pinky1
+    100058: R_Pinky2
+    100060: R_Pointer1
+    100062: R_Pointer2
+    100064: R_Ring1
+    100066: R_Ring2
+    100068: R_Shoulder
+    100070: R_Shoulder1
+    100072: R_ShoulderPlates
+    100074: R_Thumb1
+    100076: R_Thumb2
+    100078: R_UpperLeg
+    100080: R_Wrist
+    100082: Root_GRP
+    100084: UpperBody
+    400000: Body_GRP
+    400002: //RootNode
+    400004: Head
+    400006: L_Foot
+    400008: L_Forearm
+    400010: L_KneeGuard
+    400012: L_LowerLeg
+    400014: L_Palm
+    400016: L_Pinky1
+    400018: L_Pinky2
+    400020: L_Pointer1
+    400022: L_Pointer2
+    400024: L_Ring1
+    400026: L_Ring2
+    400028: L_Shoulder
+    400030: L_Shoulder1
+    400032: L_ShoulderPlates
+    400034: L_Thumb1
+    400036: L_Thumb2
+    400038: L_UpperLeg
+    400040: L_Wrist
+    400042: MIddleBody
+    400044: Pelvis
+    400046: R_Foot
+    400048: R_Forearm
+    400050: R_KneeGuard
+    400052: R_LowerLeg
+    400054: R_Palm
+    400056: R_Pinky1
+    400058: R_Pinky2
+    400060: R_Pointer1
+    400062: R_Pointer2
+    400064: R_Ring1
+    400066: R_Ring2
+    400068: R_Shoulder
+    400070: R_Shoulder1
+    400072: R_ShoulderPlates
+    400074: R_Thumb1
+    400076: R_Thumb2
+    400078: R_UpperLeg
+    400080: R_Wrist
+    400082: Root_GRP
+    400084: UpperBody
+    2300000: Head
+    2300002: L_Foot
+    2300004: L_Forearm
+    2300006: L_KneeGuard
+    2300008: L_LowerLeg
+    2300010: L_Palm
+    2300012: L_Pinky1
+    2300014: L_Pinky2
+    2300016: L_Pointer1
+    2300018: L_Pointer2
+    2300020: L_Ring1
+    2300022: L_Ring2
+    2300024: L_Shoulder
+    2300026: L_Shoulder1
+    2300028: L_ShoulderPlates
+    2300030: L_Thumb1
+    2300032: L_Thumb2
+    2300034: L_UpperLeg
+    2300036: L_Wrist
+    2300038: MIddleBody
+    2300040: Pelvis
+    2300042: R_Foot
+    2300044: R_Forearm
+    2300046: R_KneeGuard
+    2300048: R_LowerLeg
+    2300050: R_Palm
+    2300052: R_Pinky1
+    2300054: R_Pinky2
+    2300056: R_Pointer1
+    2300058: R_Pointer2
+    2300060: R_Ring1
+    2300062: R_Ring2
+    2300064: R_Shoulder
+    2300066: R_Shoulder1
+    2300068: R_ShoulderPlates
+    2300070: R_Thumb1
+    2300072: R_Thumb2
+    2300074: R_UpperLeg
+    2300076: R_Wrist
+    2300078: UpperBody
+    3300000: Head
+    3300002: L_Foot
+    3300004: L_Forearm
+    3300006: L_KneeGuard
+    3300008: L_LowerLeg
+    3300010: L_Palm
+    3300012: L_Pinky1
+    3300014: L_Pinky2
+    3300016: L_Pointer1
+    3300018: L_Pointer2
+    3300020: L_Ring1
+    3300022: L_Ring2
+    3300024: L_Shoulder
+    3300026: L_Shoulder1
+    3300028: L_ShoulderPlates
+    3300030: L_Thumb1
+    3300032: L_Thumb2
+    3300034: L_UpperLeg
+    3300036: L_Wrist
+    3300038: MIddleBody
+    3300040: Pelvis
+    3300042: R_Foot
+    3300044: R_Forearm
+    3300046: R_KneeGuard
+    3300048: R_LowerLeg
+    3300050: R_Palm
+    3300052: R_Pinky1
+    3300054: R_Pinky2
+    3300056: R_Pointer1
+    3300058: R_Pointer2
+    3300060: R_Ring1
+    3300062: R_Ring2
+    3300064: R_Shoulder
+    3300066: R_Shoulder1
+    3300068: R_ShoulderPlates
+    3300070: R_Thumb1
+    3300072: R_Thumb2
+    3300074: R_UpperLeg
+    3300076: R_Wrist
+    3300078: UpperBody
+    4300000: Pelvis
+    4300002: MIddleBody
+    4300004: UpperBody
+    4300006: Head
+    4300008: R_Shoulder1
+    4300010: R_Shoulder
+    4300012: R_Wrist
+    4300014: R_Forearm
+    4300016: R_Palm
+    4300018: R_Pointer1
+    4300020: R_Pointer2
+    4300022: R_Ring1
+    4300024: R_Ring2
+    4300026: R_Pinky1
+    4300028: R_Pinky2
+    4300030: R_Thumb1
+    4300032: R_Thumb2
+    4300034: R_ShoulderPlates
+    4300036: L_Shoulder1
+    4300038: L_Shoulder
+    4300040: L_Wrist
+    4300042: L_Forearm
+    4300044: L_Palm
+    4300046: L_Pointer1
+    4300048: L_Pointer2
+    4300050: L_Ring1
+    4300052: L_Ring2
+    4300054: L_Pinky1
+    4300056: L_Pinky2
+    4300058: L_Thumb1
+    4300060: L_Thumb2
+    4300062: L_ShoulderPlates
+    4300064: R_UpperLeg
+    4300066: R_KneeGuard
+    4300068: R_LowerLeg
+    4300070: R_Foot
+    4300072: L_UpperLeg
+    4300074: L_KneeGuard
+    4300076: L_LowerLeg
+    4300078: L_Foot
+    7400000: Idle
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      firstFrame: 27
+      lastFrame: 50
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Pelvis
+        weight: 1
+      - path: Pelvis/L_UpperLeg
+        weight: 1
+      - path: Pelvis/L_UpperLeg/L_KneeGuard
+        weight: 1
+      - path: Pelvis/L_UpperLeg/L_KneeGuard/L_LowerLeg
+        weight: 1
+      - path: Pelvis/L_UpperLeg/L_KneeGuard/L_LowerLeg/L_Foot
+        weight: 1
+      - path: Pelvis/MIddleBody
+        weight: 1
+      - path: Pelvis/MIddleBody/UpperBody
+        weight: 1
+      - path: Pelvis/MIddleBody/UpperBody/Head
+        weight: 1
+      - path: Pelvis/MIddleBody/UpperBody/L_Shoulder1
+        weight: 1
+      - path: Pelvis/MIddleBody/UpperBody/L_Shoulder1/L_Shoulder
+        weight: 1
+      - path: Pelvis/MIddleBody/UpperBody/L_Shoulder1/L_Shoulder/L_ShoulderPlates
+        weight: 1
+      - path: Pelvis/MIddleBody/UpperBody/L_Shoulder1/L_Shoulder/L_Wrist
+        weight: 1
+      - path: Pelvis/MIddleBody/UpperBody/L_Shoulder1/L_Shoulder/L_Wrist/L_Forearm
+        weight: 1
+      - path: Pelvis/MIddleBody/UpperBody/L_Shoulder1/L_Shoulder/L_Wrist/L_Forearm/L_Palm
+        weight: 1
+      - path: Pelvis/MIddleBody/UpperBody/L_Shoulder1/L_Shoulder/L_Wrist/L_Forearm/L_Palm/L_Pinky1
+        weight: 1
+      - path: Pelvis/MIddleBody/UpperBody/L_Shoulder1/L_Shoulder/L_Wrist/L_Forearm/L_Palm/L_Pinky1/L_Pinky2
+        weight: 1
+      - path: Pelvis/MIddleBody/UpperBody/L_Shoulder1/L_Shoulder/L_Wrist/L_Forearm/L_Palm/L_Pointer1
+        weight: 1
+      - path: Pelvis/MIddleBody/UpperBody/L_Shoulder1/L_Shoulder/L_Wrist/L_Forearm/L_Palm/L_Pointer1/L_Pointer2
+        weight: 1
+      - path: Pelvis/MIddleBody/UpperBody/L_Shoulder1/L_Shoulder/L_Wrist/L_Forearm/L_Palm/L_Ring1
+        weight: 1
+      - path: Pelvis/MIddleBody/UpperBody/L_Shoulder1/L_Shoulder/L_Wrist/L_Forearm/L_Palm/L_Ring1/L_Ring2
+        weight: 1
+      - path: Pelvis/MIddleBody/UpperBody/L_Shoulder1/L_Shoulder/L_Wrist/L_Forearm/L_Palm/L_Thumb1
+        weight: 1
+      - path: Pelvis/MIddleBody/UpperBody/L_Shoulder1/L_Shoulder/L_Wrist/L_Forearm/L_Palm/L_Thumb1/L_Thumb2
+        weight: 1
+      - path: Pelvis/MIddleBody/UpperBody/R_Shoulder1
+        weight: 1
+      - path: Pelvis/MIddleBody/UpperBody/R_Shoulder1/R_Shoulder
+        weight: 1
+      - path: Pelvis/MIddleBody/UpperBody/R_Shoulder1/R_Shoulder/R_ShoulderPlates
+        weight: 1
+      - path: Pelvis/MIddleBody/UpperBody/R_Shoulder1/R_Shoulder/R_Wrist
+        weight: 1
+      - path: Pelvis/MIddleBody/UpperBody/R_Shoulder1/R_Shoulder/R_Wrist/R_Forearm
+        weight: 1
+      - path: Pelvis/MIddleBody/UpperBody/R_Shoulder1/R_Shoulder/R_Wrist/R_Forearm/R_Palm
+        weight: 1
+      - path: Pelvis/MIddleBody/UpperBody/R_Shoulder1/R_Shoulder/R_Wrist/R_Forearm/R_Palm/R_Pinky1
+        weight: 1
+      - path: Pelvis/MIddleBody/UpperBody/R_Shoulder1/R_Shoulder/R_Wrist/R_Forearm/R_Palm/R_Pinky1/R_Pinky2
+        weight: 1
+      - path: Pelvis/MIddleBody/UpperBody/R_Shoulder1/R_Shoulder/R_Wrist/R_Forearm/R_Palm/R_Pointer1
+        weight: 1
+      - path: Pelvis/MIddleBody/UpperBody/R_Shoulder1/R_Shoulder/R_Wrist/R_Forearm/R_Palm/R_Pointer1/R_Pointer2
+        weight: 1
+      - path: Pelvis/MIddleBody/UpperBody/R_Shoulder1/R_Shoulder/R_Wrist/R_Forearm/R_Palm/R_Ring1
+        weight: 1
+      - path: Pelvis/MIddleBody/UpperBody/R_Shoulder1/R_Shoulder/R_Wrist/R_Forearm/R_Palm/R_Ring1/R_Ring2
+        weight: 1
+      - path: Pelvis/MIddleBody/UpperBody/R_Shoulder1/R_Shoulder/R_Wrist/R_Forearm/R_Palm/R_Thumb1
+        weight: 1
+      - path: Pelvis/MIddleBody/UpperBody/R_Shoulder1/R_Shoulder/R_Wrist/R_Forearm/R_Palm/R_Thumb1/R_Thumb2
+        weight: 1
+      - path: Pelvis/R_UpperLeg
+        weight: 1
+      - path: Pelvis/R_UpperLeg/R_KneeGuard
+        weight: 1
+      - path: Pelvis/R_UpperLeg/R_KneeGuard/R_LowerLeg
+        weight: 1
+      - path: Pelvis/R_UpperLeg/R_KneeGuard/R_LowerLeg/R_Foot
+        weight: 1
+      - path: Root_GRP
+        weight: 1
+      - path: Root_GRP/Body_GRP
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

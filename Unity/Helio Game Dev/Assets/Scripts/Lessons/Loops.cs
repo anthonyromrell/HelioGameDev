@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class Loops : MonoBehaviour {
 
-	public string[] playerNames = new string[] {"Bob", "Fred", "Sally", "Wendy"};
+	public string[] playerNames = new string [] {"Bob","Fred","Sally","Wendy"};
 	public string[] playerWeapons;
 	public List<string> playerArmor;
-	public List<string> playerColors = new List<string>() {"Blue", "Red", "Green"};
+	public List<string> playerColors = new List<string>() {"Blue","Red","Green"};
 
 	public enum playerSpecials
 	{
-		ForceField,
+		Forcefield,
 		Fire,
 		LaserEyes,
 		Strong
@@ -31,7 +31,7 @@ public class Loops : MonoBehaviour {
 
 
 		int j = 0;
-		while (j < playerWeapons.Length)
+		while (j<playerWeapons.Length)
 		{
 			print(playerWeapons[j]);
 			j++;
@@ -42,6 +42,5 @@ public class Loops : MonoBehaviour {
 			print(armor);
 		}
 
-
-	}
+	}	
 }

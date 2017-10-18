@@ -1,8 +1,19 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Unity/Helio Game Dev/Assets/3D Assets.meta
+<<<<<<< HEAD
+guid: 1f9e410e4ea11834abf1226fe55e32c6
+folderAsset: yes
+timeCreated: 1503771441
+licenseType: Free
+=======
+guid: 9bb8254d6a0874325aae7dbc1716c005
+=======
 guid: 4be5c9b61eb724902a6f6c590b69c7e9
+>>>>>>> master:Unity/Helio Game Dev/Assets/Prefabs/LevelParts/Assets.meta
 folderAsset: yes
 timeCreated: 1505440684
 licenseType: Pro
+>>>>>>> master
 DefaultImporter:
   userData: 
   assetBundleName: 

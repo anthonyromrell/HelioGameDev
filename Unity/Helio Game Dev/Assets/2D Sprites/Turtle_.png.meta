@@ -1,0 +1,317 @@
+fileFormatVersion: 2
+guid: 9606e8795cdc12f448b14f5f124e8542
+timeCreated: 1503454912
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: ShellDoor
+    21300002: Shell
+    21300004: Eye
+    21300006: Head
+    21300008: Neck3
+    21300010: Neck2
+    21300012: Neck1
+    21300014: Flipper_BR
+    21300016: Jaw
+    21300018: ShellDoorOpen
+    21300020: Flipper_BL
+    21300022: Flipper_FR
+    21300024: Flipper_FL
+    21300026: Cap
+    21300028: Body
+    21300030: ShellDoor
+    21300032: Shell
+    21300034: Eye
+    21300036: Head
+    21300038: Neck3
+    21300040: Neck2
+    21300042: Neck1
+    21300044: Flipper_BR
+    21300046: Jaw
+    21300048: ShellDoorOpen
+    21300050: Flipper_FR
+    21300052: Flipper_BL
+    21300054: Flipper_FL
+    21300056: Cap
+    21300058: Body
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 0
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: iPhone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ShellDoor
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 1385
+        width: 389
+        height: 92
+      alignment: 9
+      pivot: {x: 0.9668177, y: 0.33776855}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Shell
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 990
+        width: 1143
+        height: 454
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Eye
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 1215
+        width: 144
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Head
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 866
+        width: 432
+        height: 307
+      alignment: 9
+      pivot: {x: 0.9145939, y: 0.53241146}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Neck3
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 757
+        width: 122
+        height: 150
+      alignment: 9
+      pivot: {x: 0.8670179, y: 0.5000004}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Neck2
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 769
+        width: 103
+        height: 126
+      alignment: 9
+      pivot: {x: 0.8381152, y: 0.48025805}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Neck1
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 784
+        width: 94
+        height: 96
+      alignment: 9
+      pivot: {x: 0.8440253, y: 0.47408867}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flipper_BR
+      rect:
+        serializedVersion: 2
+        x: 1207
+        y: 681
+        width: 441
+        height: 246
+      alignment: 9
+      pivot: {x: 0.15591535, y: 0.7426892}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Jaw
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 659
+        width: 283
+        height: 125
+      alignment: 9
+      pivot: {x: 0.8955489, y: 0.73880666}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ShellDoorOpen
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 615
+        width: 382
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flipper_FR
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 343
+        width: 374
+        height: 321
+      alignment: 9
+      pivot: {x: 0.16743836, y: 0.8254756}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flipper_BL
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 11
+        width: 293
+        height: 565
+      alignment: 9
+      pivot: {x: 0.55093986, y: 0.96669316}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flipper_FL
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 22
+        width: 302
+        height: 552
+      alignment: 9
+      pivot: {x: 0.42586744, y: 0.98219067}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cap
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 417
+        width: 171
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Body
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 20
+        width: 834
+        height: 289
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
