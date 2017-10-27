@@ -45,4 +45,9 @@ public class GameData
     {
         PlayerPrefs.SetString(playerPrefsIdentifier, JsonUtility.ToJson(_instance));
     }
+    public void SaveData()
+    {
+        string gameDataAsJson = JsonUtility.ToJson(this);
+        PlayerPrefs.SetString(playerPrefsIdentifier, gameDataAsJson);
+    }
 }
