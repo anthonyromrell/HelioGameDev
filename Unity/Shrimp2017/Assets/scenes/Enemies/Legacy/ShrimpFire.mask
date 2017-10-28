@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1011 &101100000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: ShrimpFire
+  m_Mask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: Body
+    m_Weight: 0
+  - m_Path: Body/Bodyb
+    m_Weight: 0
+  - m_Path: Body/GunHolder
+    m_Weight: 1
+  - m_Path: Body/GunHolder/Gun
+    m_Weight: 1
+  - m_Path: Body/GunHolder/Gun/GunTip
+    m_Weight: 1
+  - m_Path: Body/Head1
+    m_Weight: 0
+  - m_Path: Body/Head1/Jaw
+    m_Weight: 0
+  - m_Path: Body/LGunDoor
+    m_Weight: 1
+  - m_Path: Body/LUpperArm
+    m_Weight: 0
+  - m_Path: Body/LUpperArm/LLowerArm
+    m_Weight: 0
+  - m_Path: Body/LUpperArm/LLowerArm/LClaw
+    m_Weight: 0
+  - m_Path: Body/LUpperArm/LLowerArm/LClaw/LClawBlade
+    m_Weight: 0
+  - m_Path: Body/RGunDoor
+    m_Weight: 1
+  - m_Path: Body/RUpperArm
+    m_Weight: 0
+  - m_Path: Body/RUpperArm/RLowerArm
+    m_Weight: 0
+  - m_Path: Body/RUpperArm/RLowerArm/RClaw
+    m_Weight: 0
+  - m_Path: Body/RUpperArm/RLowerArm/RClaw/RClawBlade
+    m_Weight: 0
+  - m_Path: Body/Tail1
+    m_Weight: 0
+  - m_Path: Body/Tail1/Tail1b
+    m_Weight: 0
+  - m_Path: Body/Tail1/Tail2
+    m_Weight: 0
+  - m_Path: Body/Tail1/Tail2/Tail2b
+    m_Weight: 0
+  - m_Path: Body/Tail1/Tail2/Tail3
+    m_Weight: 0
+  - m_Path: Body/Tail1/Tail2/Tail3/Tail3b
+    m_Weight: 0
+  - m_Path: Body/Tail1/Tail2/Tail3/Tail4
+    m_Weight: 0
+  - m_Path: Body/Tail1/Tail2/Tail3/Tail4/Tail4b
+    m_Weight: 0
+  - m_Path: Body/Tail1/Tail2/Tail3/Tail4/TAil5
+    m_Weight: 0
+  - m_Path: Body/Tail1/Tail2/Tail3/Tail4/TAil5/Tail5b
+    m_Weight: 0
+  - m_Path: Body/Tail1/Tail2/Tail3/Tail4/TAil5/TailTip
+    m_Weight: 0

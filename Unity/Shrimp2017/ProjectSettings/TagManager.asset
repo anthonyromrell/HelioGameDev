@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - RAYGUN
+  - MISSILE
+  - PLASMA
+  - SONICBAT
+  - ELECTROSPEAR
+  - Enemy
+  - Plasma
+  - Fire
+  - BULLET
+  - EnemyTrigger
+  - Strike
+  - Fuel
+  - Point
+  - Destroyer
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Level
+  - 
+  - 
+  - 
+  - Player
+  - PlayerKillZone
+  - PlayerAmmo
+  - PlayerSheilds
+  - PlayerAnims
+  - PlayerFX
+  - Enemy
+  - EnemyKillZone
+  - EnemyAmmo
+  - EnemyPlayerContact
+  - 
+  - 
+  - PowerUp
+  - Logo
+  - LogoBack
+  - 
+  - Spawner
+  - SpawnerActivator
+  - 
+  - 
+  m_SortingLayers:
+  - name: BackStuff
+    uniqueID: 1112529203
+    locked: 0
+  - name: PlayerBack
+    uniqueID: 1179921563
+    locked: 0
+  - name: RangeWeapons
+    uniqueID: 1229136533
+    locked: 0
+  - name: Player
+    uniqueID: 1660818927
+    locked: 0
+  - name: PlayerFront
+    uniqueID: 3006856565
+    locked: 0
+  - name: MeleeWeapons
+    uniqueID: 4121893557
+    locked: 0
+  - name: Forground
+    uniqueID: 1372918755
+    locked: 0
+  - name: Enemies
+    uniqueID: 2813685873
+    locked: 0
+  - name: Ammo
+    uniqueID: 3358457919
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
