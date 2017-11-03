@@ -13,6 +13,6 @@ public class FlipCharacter : MonoBehaviour
     void Flip(float _direction)
     {
         RotateDirection.y = _direction;
-        transform.eulerAngles = RotateDirection;
+        transform.rotation = Quaternion.Euler(RotateDirection);
     }
 }
