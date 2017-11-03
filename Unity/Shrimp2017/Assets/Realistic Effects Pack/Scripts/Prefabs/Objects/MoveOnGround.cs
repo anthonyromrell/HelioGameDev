@@ -4,7 +4,6 @@ using System.Collections;
 
 public class MoveOnGround : MonoBehaviour
 {
-  public event EventHandler<CollisionInfo> OnCollision;
   public bool IsRootMove = true;
 
   private EffectSettings effectSettings;

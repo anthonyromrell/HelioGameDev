@@ -11,6 +11,5 @@ public class ActivateEnemyAI : MonoBehaviour {
 
 	void OnTriggerExit ( ) {
 		EnemyNavMeshAgent.myTarget = this.gameObject;//changes the navMeshAgent target to itself
-		EnemyNavMeshAgent.EndMove ();
 	}
 }

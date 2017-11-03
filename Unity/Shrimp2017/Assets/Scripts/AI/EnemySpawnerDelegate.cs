@@ -1,39 +1,34 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using System;
 
-public class EnemySpawnerDelegate : MonoBehaviour {
-	
-	private float activationTime = 0.0F; //this will be added and compared to time.time
-	public float nextActivate = 2.0F; // how long it takes for the next activation time
+public class EnemySpawnerDelegate : MonoBehaviour
+{
+	bool canSpawn = false;
+    public float randomSpawningTime = 10;//variation on respawn time
+	public static Action<Vector3> ActivateEnemyEvent; //invokes the delegate
 
-	public int randomSpawningTime = 10;//variation on respawn time
+    void OnTriggerEnter()
+    {
+		canSpawn = true;
+    	StartCoroutine (ActivateEnemy()); //runs the enemy activation event
+    }
 
-	public Animator spawnAnim;//requires an animator component for the spawner 
-	public delegate void ActivateEnemyHandler (Vector3 _v); //sends this location to enemies
-	public static ActivateEnemyHandler ActivateEnemyEvent; //invokes the delegate
+	void OnTriggerExit()
+    {
+    	canSpawn = false;
+    }
 
-	
-	void Start() {
-		spawnAnim = this.GetComponent<Animator>();//references the animator component
-		OnActivateEnemy(); //runs the enemy activation event
-	}
-
-	void OnTriggerStay() {
-		OnActivateEnemy(); //runs the enemy activation event
-	}
-
-	void TurnOffSpawn () {
-		spawnAnim.SetBool("Spawn", false);
-	}
-
-	public void OnActivateEnemy () {
-		if(Time.time > activationTime) {
-			if( ActivateEnemyEvent != null ) { //invokes the event
-				ActivateEnemyEvent(transform.position);//passes this postion to any 
-			}
-			spawnAnim.SetBool("Spawn", true);
-			activationTime = Time.time + nextActivate+(Random.Range(0,randomSpawningTime));//randomises the next activation time
+    IEnumerator ActivateEnemy()
+    {
+		while (canSpawn)
+		{
+			yield return new WaitForSeconds(UnityEngine.Random.Range(0, randomSpawningTime));
+			if (ActivateEnemyEvent != null)
+            {
+                ActivateEnemyEvent(transform.position);//passes this postion to any 
+            }
 		}
-	}	
+	}
 }
