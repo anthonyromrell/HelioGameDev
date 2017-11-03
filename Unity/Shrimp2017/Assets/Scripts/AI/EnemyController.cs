@@ -21,7 +21,6 @@ public class EnemyController : MonoBehaviour
         this.gameObject.SetActive(true);//turns off the gameObject
         Invoke("Deactivate", 1.5f);
         killerWeaponsList = new List<WeaponClass>();//news up the killerWeaponsList instance 
-        WeaponClass.AddWeaponToList += AddKillerWeapons;//subscribes to any avaliable weaponClass instances
         EnemyAnims.SetFloat("Swim", 0);
     }
 
@@ -51,11 +50,6 @@ public class EnemyController : MonoBehaviour
         EnemyAnims.SetLayerWeight(2, 0f);
     }
 
-    public void AddKillerWeapons(WeaponClass _aS)
-    {
-        killerWeaponsList.Add(_aS);
-    }
-
     IEnumerator PlayDamageAnim()
     {
         var i = Random.Range(0.5f, 1);
@@ -70,14 +64,8 @@ public class EnemyController : MonoBehaviour
     {
         StartCoroutine(PlayDamageAnim());
 
-        string _t = _c.gameObject.tag;//_t is tag
-        foreach (WeaponClass _aS in killerWeaponsList)
-        {
-            if (_t == _aS.thisWeaponSelection.ToString())
-            {
-                health -= _aS.ammoPower;
-            }
-        }
+        health -= GameData.Instance.currentWeapon.ammoPower;
+
         if (health <= 0)
         {
             art.SetActive(false);
