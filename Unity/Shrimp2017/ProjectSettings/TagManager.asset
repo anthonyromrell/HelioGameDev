@@ -18,6 +18,8 @@ TagManager:
   - Fuel
   - Point
   - Destroyer
+  - Bullet
+  - Missile
   layers:
   - Default
   - TransparentFX
@@ -28,7 +30,7 @@ TagManager:
   - 
   - 
   - Level
-  - 
+  - NavLevel
   - 
   - 
   - Player

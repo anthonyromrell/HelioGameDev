@@ -12,7 +12,7 @@ public class FlipCharacter : MonoBehaviour
 
     void Flip(float _direction)
     {
-        RotateDirection.z = _direction;
+        RotateDirection.y = _direction;
         transform.eulerAngles = RotateDirection;
     }
 }

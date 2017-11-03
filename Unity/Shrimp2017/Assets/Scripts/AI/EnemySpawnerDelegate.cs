@@ -30,7 +30,7 @@ public class EnemySpawnerDelegate : MonoBehaviour {
 	public void OnActivateEnemy () {
 		if(Time.time > activationTime) {
 			if( ActivateEnemyEvent != null ) { //invokes the event
-				ActivateEnemyEvent(this.transform.position);//passes this postion to any 
+				ActivateEnemyEvent(transform.position);//passes this postion to any 
 			}
 			spawnAnim.SetBool("Spawn", true);
 			activationTime = Time.time + nextActivate+(Random.Range(0,randomSpawningTime));//randomises the next activation time

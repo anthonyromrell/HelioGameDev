@@ -41,13 +41,13 @@ public class MoveAndJumpCharacter : MonoBehaviour {
 
     void MoveCharacter(float _speed)
     {
-        if ((myController.collisionFlags & CollisionFlags.Sides) != 0)
+        if (myController.isGrounded)
         {
             moveDirection.x = _speed * speed;
-            moveDirection.y = 0;
-            moveDirection.z = jumpForce * Time.deltaTime;
+            moveDirection.z = 0;
+            moveDirection.y = jumpForce * Time.deltaTime;
         }
-        moveDirection.z -= gravity * Time.deltaTime;
+        moveDirection.y -= gravity * Time.deltaTime;
         myController.Move(moveDirection * Time.deltaTime);
     }
 }

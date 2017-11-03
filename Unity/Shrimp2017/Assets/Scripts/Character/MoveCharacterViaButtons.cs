@@ -14,7 +14,7 @@ public class MoveCharacterViaButtons : MonoBehaviour
 	public void OnMouseDown () {
 		if(MoveCharacter != null )
 			MoveCharacter(direction);
-		print ("Button");
+
 	}
 
 	public void OnMouseUp () {

@@ -53,6 +53,7 @@ public class EnemyController : MonoBehaviour
 
 	void OnDisable()
 	{
+		print("on");
 		EnemySpawnerDelegate.ActivateEnemyEvent += Reactivate;//subscripts the Reactivate function the the EnemySpawnerDelegate event
 	}
 
@@ -132,11 +133,14 @@ public class EnemyController : MonoBehaviour
 	}
 
 	void Reactivate(Vector3 _v)
+	
 	{//the delegate passes a value of the location to respawn
 		EnemyAnims.SetLayerWeight(2, 0);
+		
 		health = healthReturn;//resets the health var
-		this.transform.position = new Vector3(_v.x, _v.y, _v.z);// places the enemy in the position that the delegate passes
+		this.transform.position = _v;// places the enemy in the position that the delegate passes
 		if (Time.time > activationTime) {
+			print("Call");
 			art.SetActive(true);
 			explosion.SetActive(false);
 			this.gameObject.SetActive(true);//actiovates the enemy
