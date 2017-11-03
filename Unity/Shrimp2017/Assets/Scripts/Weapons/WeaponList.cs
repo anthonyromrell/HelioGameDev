@@ -24,13 +24,16 @@ public class WeaponList : MonoBehaviour
 
     public void Start()
     {
-        WeaponAttachPoint.AttachAction += addAttachPoints;
-        resetWeaponRotation.x = 270;
         GameData.Instance.WeaponBars = new List<WeaponBar>();
-        WeaponBar.AddWeaponBar += AddWeaponBars;
-        FireWeaponChoice.AddFire += AddWeaponButtons;
         GameData.Instance.WeaponsList = new List<WeaponClass>();
         GameData.Instance.currentWeapon = null;
+        GameData.Instance.FireButtons = new List<FireWeaponChoice>();
+
+    
+        WeaponBar.AddWeaponBar += AddWeaponBars;
+        WeaponAttachPoint.AttachAction += addAttachPoints;
+        resetWeaponRotation.x = 270;
+        FireWeaponChoice.AddFire += AddWeaponButtons;
         WeaponClass.AddWeaponToList += AddWeapons;
         SwitchCurrentWeapon.SwitchWeapon += SwitchThisWeapon;
         FireWeaponChoice.FireCurrentWeapon += CurrentWeaponNum;
