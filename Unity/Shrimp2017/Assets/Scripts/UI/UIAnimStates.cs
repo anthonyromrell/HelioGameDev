@@ -1,18 +1,21 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.Events;
 
 public class UIAnimStates : MonoBehaviour {
 
 	public Text startText;
 	public Animator guiAnim;
 
-	public void OnTwo () {
-		startText.text = "2";
+	public static UnityAction CanPlay;
+
+	public void OnChange (string _text) {
+		startText.text = _text;
 	}
 
-	public void OnOne () {
-		startText.text = "1";
+	public void OnCanPlay (){
+		CanPlay();
 	}
 
 	public void OnEnd () {
@@ -31,9 +34,4 @@ public class UIAnimStates : MonoBehaviour {
 	{
 		StartCoroutine(EndGUI());
 	}
-
-	void Start () {
-//w		EndGame.TurnOffGame += EndThisGUI;
-	}
-
 }

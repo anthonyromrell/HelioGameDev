@@ -15,7 +15,7 @@ public class GameData
     public int totalScore;
     public int lives;
     public float health;
-    public int gold;
+    public int coin;
     public Vector3 checkPoint;
     public List<WeaponClass> WeaponsList;
     public WeaponClass currentWeapon;

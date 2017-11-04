@@ -32,6 +32,5 @@ public class GameDataView : MonoBehaviour {
 	[ContextMenu("Set Data")]
 	void SetData () {
 		myData.SaveData();
-		print(PlayerPrefs.GetString(GameData.playerPrefsIdentifier));
 	}
 }

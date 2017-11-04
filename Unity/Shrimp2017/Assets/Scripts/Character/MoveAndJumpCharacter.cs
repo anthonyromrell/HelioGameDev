@@ -16,7 +16,12 @@ public class MoveAndJumpCharacter : MonoBehaviour {
     
     void Start()
     {
-		myController = GetComponent<CharacterController>();
+        UIAnimStates.CanPlay = CanPlayHandler;
+    }
+
+    private void CanPlayHandler ()
+    {
+        myController = GetComponent<CharacterController>();
         jumpReturn = jumpForce;
         MoveCharacterViaButtons.MoveCharacter += MoveCharacter;
         MoveViaKeys.Speed += MoveCharacter;
