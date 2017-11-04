@@ -1,17 +1,20 @@
 ﻿using UnityEngine;
 using System.Collections;
-using System;
+using UnityEngine.Events;
 
 public class CharacterHealthKiller : MonoBehaviour {
 
 	public float ammoPower = 0.1f;
-	public static Action<float> UpdateHealth;
+	public static UnityAction<float> UpdateHealth;
+	public static UnityAction<int> CoinPowerDown;
 
 	void OnTriggerEnter (Collider _collider)
 	{
 		if(_collider.tag == "Player") {
-			if(UpdateHealth != null)
+			if(UpdateHealth != null) {
 				UpdateHealth(ammoPower);
+				CoinPowerDown((int)ammoPower);
+			}
 		}
 	}
 }

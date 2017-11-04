@@ -12,16 +12,33 @@ public class UpdateCoin : MonoBehaviour {
     void Start () {
 		coinUI = GetComponent<Text>();
 		CoinPowerUp.UpdateCoin += CoinHandler;
+		CharacterHealthKiller.CoinPowerDown += CoinHandler;
 		coinUI.text = GameData.Instance.coin.ToString("N0", CultureInfo.CurrentCulture);
 	}
 	
 	void CoinHandler (int _coinValue) {
-		StartCoroutine(ChangeCoinValue(_coinValue));
-		coinAnimationText.text = "+" + _coinValue.ToString("N0", CultureInfo.CurrentCulture);
+		if(_coinValue > 0) {
+			StartCoroutine(AddCoinValue(_coinValue));
+			coinAnimationText.text = "+" + _coinValue.ToString("N0", CultureInfo.CurrentCulture);
+		} else {
+			StartCoroutine(SubtractCoinValue(_coinValue));
+			coinAnimationText.text = "-" + _coinValue.ToString("N0", CultureInfo.CurrentCulture);
+		}
+
 		coinAnimation.SetTrigger("Collect");
 	}
 
-	IEnumerator ChangeCoinValue (int _coinValue) {
+	IEnumerator SubtractCoinValue (int _coinValue) {
+		int tempCoinValue = GameData.Instance.coin + _coinValue;
+		while (GameData.Instance.coin > tempCoinValue)
+		{
+			GameData.Instance.coin--;
+			coinUI.text = GameData.Instance.coin.ToString("N0", CultureInfo.CurrentCulture);
+			yield return new WaitForFixedUpdate();
+		}
+	}
+
+	IEnumerator AddCoinValue (int _coinValue) {
 		int tempCoinValue = GameData.Instance.coin + _coinValue;
 		while (GameData.Instance.coin < tempCoinValue)
 		{
