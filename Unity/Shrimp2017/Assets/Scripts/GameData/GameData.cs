@@ -17,7 +17,7 @@ public class GameData
     public float health;
     public int coin;
     public Vector3 checkPoint;
-    public List<WeaponClass> WeaponsList;
+    public List<WeaponClass> avaliableWeapons;
     public WeaponClass currentWeapon;
     public List<WeaponBar> WeaponBars;
     public List<FireWeaponChoice> FireButtons;
