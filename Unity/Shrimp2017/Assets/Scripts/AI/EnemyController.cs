@@ -5,8 +5,8 @@ using System.Collections.Generic;
 public class EnemyController : MonoBehaviour
 {
     private float velocity;//the current velocity of the enemy in x
-    public int health = 3;//the enemy health
-    public int healthReturn = 3;//the value that the enemy should return to if upon respawning
+    public float health = 1;//the enemy health
+    public float healthReturn = 1;//the value that the enemy should return to if upon respawning
     public GameObject myTarget; // the location of the player the enemies case
     public GameObject art;//game art that be deactivated when the it "explodes"
     public GameObject explosion;//the FX for enemyExploding
@@ -64,7 +64,7 @@ public class EnemyController : MonoBehaviour
     {
         StartCoroutine(PlayDamageAnim());
 
-        health -= GameData.Instance.currentWeapon.ammoPower;
+        health -= GameData.Instance.currentWeapon.firePower;
 
         if (health <= 0)
         {

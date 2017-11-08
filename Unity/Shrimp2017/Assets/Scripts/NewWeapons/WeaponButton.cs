@@ -6,30 +6,37 @@ using UnityEngine.Events;
 using UnityEngine.UI;
 using Weapons;
 
-public class WeaponButton : MonoBehaviour {
+namespace Weapons
+{
+    public class WeaponButton : MonoBehaviour
+    {
 
+        public int weaponNum = 0;
+        private Weapon myWeapon;
+        public Image weaponBar;
 
-	public int weaponNum = 0;
-	private Weapon myWeapon;
+        private Image button;
+        public Color activeColor = Color.yellow;
 
-	private Image image;
-	public Color activeColor = Color.red;
+        void Start()
+        {
+            Weapons.Weapon.SendWeapon += WeaponHandler;
+            button = GetComponent<Image>();
+        }
 
-	// Use this for initialization
-	void Start () {
-		Weapons.Weapon.SendWeapon += WeaponHandler;
-		image = GetComponent<Image>();
-	}
+        private void WeaponHandler(Weapon _weapon)
+        {
+            if (GameData.Instance.weaponNum == weaponNum)
+            {
+                myWeapon = _weapon;
+                button.color = activeColor;
+                weaponBar.color = activeColor;
+            }
+        }
 
-    private void WeaponHandler(Weapon _weapon) {
-		if (GameData.Instance.weaponNum == weaponNum)
-		{
-			myWeapon = _weapon;
-			image.color = activeColor;
-		}
+        public void Click()
+        {
+            weaponBar.fillAmount = myWeapon.data.Fire();
+        }
     }
-
-	public void Click () {
-		myWeapon.Fire();
-	}
 }

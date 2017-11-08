@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
+using Weapons;
 
 [System.Serializable]
 public class GameData
@@ -20,12 +21,9 @@ public class GameData
 
 
     public int weaponNum;
-
-    public List<WeaponClass> avaliableWeapons;
-    public WeaponClass currentWeapon;
-    public List<WeaponBar> WeaponBars;
-    public List<FireWeaponChoice> FireButtons;
-
+    public List<WeaponData> weaponList;
+    //public 
+    public WeaponData currentWeapon;
 
 
     private static GameData _instance;
