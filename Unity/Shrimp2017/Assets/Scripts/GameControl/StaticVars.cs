@@ -10,7 +10,7 @@ public class StaticVars : MonoBehaviour
 	public static int counter = 0;
 	public static int clickTimes = 2;
 	public static int highScore;
-	public static List<ScoreClass> scoreClassList;
+//	public static List<ScoreClass> scoreClassList;
 	public static float player1Health = 1;
 	public static LevelEnum.LevelChoice currentLevel;
 }

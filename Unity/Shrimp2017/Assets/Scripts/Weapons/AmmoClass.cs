@@ -13,6 +13,7 @@ public class AmmoClass : EnemyWeaponFX {
 
 		this.gameObject.tag = thisWeaponSelection.ToString();
 
+
 		if(AddAmmoToList != null)
 			AddAmmoToList(this);
 	}
