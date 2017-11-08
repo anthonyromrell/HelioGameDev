@@ -36,7 +36,29 @@ namespace Weapons
 
         public void Click()
         {
-            weaponBar.fillAmount = myWeapon.data.Fire();
+            //weaponBar.fillAmount = myWeapon.data.Fire();
+            StartCoroutine(PowerDownBar());
+        }
+
+        IEnumerator PowerDownBar()
+        {
+            
+            float tempAmount = weaponBar.fillAmount - myWeapon.data.firePower;
+            if (tempAmount < 0)
+            {
+                tempAmount = 0;
+            }
+
+            while (weaponBar.fillAmount > tempAmount)
+            {
+                weaponBar.fillAmount -= myWeapon.data.fireRate;
+                yield return new WaitForFixedUpdate();
+            }
+
+            if (weaponBar.fillAmount == 0)
+            {
+                //EndGame("Game Over");
+            }
         }
     }
 }
