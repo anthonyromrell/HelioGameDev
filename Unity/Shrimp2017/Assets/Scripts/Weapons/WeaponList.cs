@@ -28,7 +28,7 @@ public class WeaponList : MonoBehaviour
 
 	public void Start()
 	{
-		WeaponAttachPoint.AttachAction += addAttachPoints;
+	//	WeaponAttachPoint.AttachAction += addAttachPoints;
 		resetWeaponRotation.x = 270;
 		WeaponBars = new List<WeaponBar>();
 		WeaponBar.AddWeaponBar += AddWeaponBars;
@@ -86,15 +86,15 @@ public class WeaponList : MonoBehaviour
 
 		AddBarToWeaponClass(_w);
 
-		switch (_w.KindOfWeapon) {
-			case WeaponAttachPoint.AttachType.Melee:
-				_w.gameObject.transform.parent = meleeAttachPoint;
-				break;
+		// switch (_w.KindOfWeapon) {
+		// 	case WeaponAttachPoint.AttachType.Melee:
+		// 		_w.gameObject.transform.parent = meleeAttachPoint;
+		// 		break;
 			
-			case WeaponAttachPoint.AttachType.Range:
-				_w.gameObject.transform.parent = RangeAttachPoint;
-				break;
-		}
+		// 	case WeaponAttachPoint.AttachType.Range:
+		// 		_w.gameObject.transform.parent = RangeAttachPoint;
+		// 		break;
+		// }
 
 		_w.gameObject.transform.localPosition = weaponLocation;
 		_w.gameObject.transform.localRotation = Quaternion.Euler(resetWeaponRotation);

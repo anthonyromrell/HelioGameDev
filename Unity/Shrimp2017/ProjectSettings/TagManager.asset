@@ -60,11 +60,11 @@ TagManager:
   - name: PlayerBack
     uniqueID: 1179921563
     locked: 0
-  - name: RangeWeapons
-    uniqueID: 1229136533
-    locked: 0
   - name: Player
     uniqueID: 1660818927
+    locked: 0
+  - name: RangeWeapons
+    uniqueID: 1229136533
     locked: 0
   - name: PlayerFront
     uniqueID: 3006856565

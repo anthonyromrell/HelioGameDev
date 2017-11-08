@@ -16,7 +16,7 @@ public class MoveAndJumpCharacter : MonoBehaviour {
     
     void Start()
     {
-        UIAnimStates.CanPlay = CanPlayHandler;
+        UIAnimStates.CanPlay = CanPlayHandler;  
     }
 
     private void CanPlayHandler ()

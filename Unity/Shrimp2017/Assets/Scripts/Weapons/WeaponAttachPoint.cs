@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-using System;
+using UnityEngine.Events;
 
 public class WeaponAttachPoint : MonoBehaviour {
 	
@@ -11,10 +11,10 @@ public class WeaponAttachPoint : MonoBehaviour {
 
 	public AttachType thisAttachType = AttachType.Melee;
 
-	public static Action<WeaponAttachPoint> AttachAction;
+	public static UnityAction<Transform> AttachAction;
 
 	void Start () {
 		if (AttachAction != null)
-			AttachAction (this);
+			AttachAction (transform);
 	}
 }
