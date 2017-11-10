@@ -10,7 +10,6 @@ namespace Weapons
 {
     public class WeaponButton : MonoBehaviour
     {
-
         public int weaponNum = 0;
         private Weapon myWeapon;
         public Image weaponBar;
@@ -24,7 +23,6 @@ namespace Weapons
             Weapon.SendWeapon += WeaponHandler;
             button = GetComponent<Image>();
         }
-
         private void WeaponHandler(Weapon _weapon)
         {
             if (GameData.Instance.weaponNum == weaponNum)
@@ -35,47 +33,34 @@ namespace Weapons
                 weaponBar.fillAmount = myWeapon.data.totalAmmo;
             }
         }
-
         public void Click()
         {
-            
+
             if (WaitToFire == null)
             {
-               WaitToFire = StartCoroutine(Fire());  
-            } 
+                WaitToFire = StartCoroutine(Fire());
+            }
         }
 
         IEnumerator Fire()
         {
             if (weaponBar.fillAmount != 0)
             {
-                myWeapon.fx.Play();
-                myWeapon.soundFX.Play();
                 CanFire(myWeapon.data.fireRate);
-            } 
-
+            }
             float tempAmount = weaponBar.fillAmount - myWeapon.data.firePower;
             if (tempAmount < 0)
             {
                 tempAmount = 0;
             }
-
             while (weaponBar.fillAmount > tempAmount)
             {
                 weaponBar.fillAmount -= myWeapon.data.fireRate;
                 yield return new WaitForFixedUpdate();
             }
-
             yield return new WaitForSeconds(myWeapon.data.fireRate);
-
             myWeapon.data.totalAmmo = weaponBar.fillAmount;
-            myWeapon.fx.Stop();
-
             WaitToFire = null;
         }
-
-
-        
-    
     }
 }

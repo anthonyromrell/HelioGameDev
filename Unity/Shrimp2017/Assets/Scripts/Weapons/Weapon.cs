@@ -5,7 +5,7 @@ using Weapons;
 
 namespace Weapons
 {
-    
+
     public class Weapon : MonoBehaviour
     {
         public WeaponData data;
@@ -26,7 +26,7 @@ namespace Weapons
         {
             SendWeapon(this);
             GameData.Instance.weaponNum++;
-            GetComponent<BoxCollider>().enabled = false;    
+            GetComponent<BoxCollider>().enabled = false;
             transform.parent = attachPoint.transform;
             Invoke("Attach", 0.25f);
         }
@@ -36,7 +36,8 @@ namespace Weapons
             attachPoint = _attachPoint;
         }
 
-        void Attach () {
+        void Attach()
+        {
             transform.localPosition = Vector3.zero;
             transform.localRotation = Quaternion.identity;
         }
@@ -44,16 +45,6 @@ namespace Weapons
         void OnApplicationQuit()
         {
             GameData.Instance.weaponNum = 0;
-        }
-
-        void Fire () {
-            fx.Play();
-            soundFX.Play();
-            Invoke("StopFire", 0.25f);
-        }
-
-        void StopFire () {
-            fx.Stop();
         }
     }
 }

@@ -7,10 +7,9 @@ using System;
 public class AnimateCharacter : MonoBehaviour
 {
     //Events
-    public static UnityAction<WeaponType.weaponSelection> ReturnFire;
-    public static UnityAction<WeaponType.weaponSelection> EndReturnFire;
-    public static UnityAction<Animator> SendAnim;
-
+    //public static UnityAction<WeaponType.weaponSelection> ReturnFire;
+    //public static UnityAction<WeaponType.weaponSelection> EndReturnFire;
+    //public static UnityAction<Animator> SendAnim;
     //Properties
     public Animator characterAnim;
 
