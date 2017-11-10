@@ -14,9 +14,10 @@ namespace Weapons
         public int weaponNum = 0;
         private Weapon myWeapon;
         public Image weaponBar;
-
         private Image button;
         public Color activeColor = Color.yellow;
+        public static UnityAction<float> CanFire;
+        private Coroutine WaitToFire;
 
         void Start()
         {
@@ -31,18 +32,27 @@ namespace Weapons
                 myWeapon = _weapon;
                 button.color = activeColor;
                 weaponBar.color = activeColor;
+                weaponBar.fillAmount = myWeapon.data.totalAmmo;
             }
         }
 
         public void Click()
         {
-            //weaponBar.fillAmount = myWeapon.data.Fire();
-            StartCoroutine(PowerDownBar());
+            
+            if (WaitToFire == null)
+            {
+               WaitToFire = StartCoroutine(Fire());  
+            } 
         }
 
-        IEnumerator PowerDownBar()
+        IEnumerator Fire()
         {
-            
+            print("fire");
+            if (weaponBar.fillAmount != 0)
+            {
+                CanFire(myWeapon.data.fireRate);
+            } 
+
             float tempAmount = weaponBar.fillAmount - myWeapon.data.firePower;
             if (tempAmount < 0)
             {
@@ -55,10 +65,11 @@ namespace Weapons
                 yield return new WaitForFixedUpdate();
             }
 
-            if (weaponBar.fillAmount == 0)
-            {
-                //EndGame("Game Over");
-            }
+            yield return new WaitForSeconds(myWeapon.data.fireRate);
+
+            myWeapon.data.totalAmmo = weaponBar.fillAmount;
+
+            WaitToFire = null;
         }
     }
 }
