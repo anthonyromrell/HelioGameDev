@@ -21,7 +21,7 @@ namespace Weapons
 
         void Start()
         {
-            Weapons.Weapon.SendWeapon += WeaponHandler;
+            Weapon.SendWeapon += WeaponHandler;
             button = GetComponent<Image>();
         }
 
@@ -47,9 +47,10 @@ namespace Weapons
 
         IEnumerator Fire()
         {
-            print("fire");
             if (weaponBar.fillAmount != 0)
             {
+                myWeapon.fx.Play();
+                myWeapon.soundFX.Play();
                 CanFire(myWeapon.data.fireRate);
             } 
 
@@ -68,8 +69,13 @@ namespace Weapons
             yield return new WaitForSeconds(myWeapon.data.fireRate);
 
             myWeapon.data.totalAmmo = weaponBar.fillAmount;
+            myWeapon.fx.Stop();
 
             WaitToFire = null;
         }
+
+
+        
+    
     }
 }

@@ -9,7 +9,8 @@ namespace Weapons
     public class Weapon : MonoBehaviour
     {
         public WeaponData data;
-
+        public ParticleSystem fx;
+        public AudioSource soundFX;
         private Transform attachPoint;
         public static UnityAction<Weapon> SendWeapon;
 
@@ -43,6 +44,16 @@ namespace Weapons
         void OnApplicationQuit()
         {
             GameData.Instance.weaponNum = 0;
+        }
+
+        void Fire () {
+            fx.Play();
+            soundFX.Play();
+            Invoke("StopFire", 0.25f);
+        }
+
+        void StopFire () {
+            fx.Stop();
         }
     }
 }

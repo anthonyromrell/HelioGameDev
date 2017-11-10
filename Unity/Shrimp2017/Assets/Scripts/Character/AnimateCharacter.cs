@@ -35,16 +35,6 @@ public class AnimateCharacter : MonoBehaviour
         Invoke("ResetFire", _num);
     }
 
-    void ResetFire()
-    {
-       // characterAnim.SetLayerWeight(1, 0);
-    }
-
-    void OnTriggerEnter(Collider other)
-    {
-        characterAnim.SetBool("Jump", false);
-    }
-
     void OnWinGame()
     {
         // StartCoroutine(RunCoroutine(0.1f, "Win"));
@@ -80,5 +70,10 @@ public class AnimateCharacter : MonoBehaviour
     void Jump()
     {
         characterAnim.SetBool("Jump", true);
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        characterAnim.SetBool("Jump", false);
     }
 }

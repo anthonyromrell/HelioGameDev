@@ -11,9 +11,8 @@ public class MoveAndJumpCharacter : MonoBehaviour {
     public float gravity = 1;
     private Vector3 moveDirection;
     private CharacterController myController;
+    public Animator characterAnim;
 
-    //Methods
-    
     void Start()
     {
         UIAnimStates.CanPlay += CanPlayHandler;
@@ -44,6 +43,11 @@ public class MoveAndJumpCharacter : MonoBehaviour {
         jumpForce = jumpReturn;
         StartCoroutine(StopJumpForce());
     }
+
+    // void OnCollisionEnter(Collision other)
+    // {
+    //     characterAnim.SetBool("Jump", false);
+    // }
 
     void MoveCharacter(float _speed)
     {
