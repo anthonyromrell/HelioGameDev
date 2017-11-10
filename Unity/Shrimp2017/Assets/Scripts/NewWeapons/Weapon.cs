@@ -9,7 +9,7 @@ namespace Weapons
     public class Weapon : MonoBehaviour
     {
         public WeaponData data;
-        public ParticleSystem fx;
+        public GameObject fx;
         public AudioSource soundFX;
         private Transform attachPoint;
         public static UnityAction<Weapon> SendWeapon;
@@ -21,6 +21,14 @@ namespace Weapons
             WeaponAttachPoint.AttachAction += AttachHandler;
         }
 
+        public void Fire (bool _canFire) {
+            fx.SetActive(_canFire);
+        }
+                                                            
+
+        public void EndFire () {
+            fx.SetActive(false);
+        }
 
         void OnTriggerEnter(Collider other)
         {

@@ -57,9 +57,7 @@ public class WeaponClass : MonoBehaviour
             AddWeaponToList(this);
 
         PowerUpBase.UpdateLevelEvent += AddBackToAvaliableAmmo;
-        AnimateCharacter.ReturnFire += ReturnFire;
-        AnimateCharacter.EndReturnFire += EndFX;
-        this.GetComponent<BoxCollider>().enabled = false;
+      this.GetComponent<BoxCollider>().enabled = false;
     }
 
     void AddToTargetList(GameObject obj)

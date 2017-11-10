@@ -9,10 +9,9 @@ public class AnimateCharacter : MonoBehaviour
     //Events
     //public static UnityAction<WeaponType.weaponSelection> ReturnFire;
     //public static UnityAction<WeaponType.weaponSelection> EndReturnFire;
-    //public static UnityAction<Animator> SendAnim;
+    public static UnityAction FireAction;
     //Properties
     public Animator characterAnim;
-
     public Weapon weapon;
     public GameObject onFX;
     public WeaponType.weaponSelection currentWeaponType;
@@ -30,9 +29,18 @@ public class AnimateCharacter : MonoBehaviour
     private void FireHandler(float _num)
     {
         characterAnim.SetLayerWeight(1, 1);
+        //characterAnim
+        //characterAnim["Player_Fire_Raygun"].speed = GameData.Instance.currentWeapon.data.fireRate]
         characterAnim.SetTrigger("FireWeapon");
-        Invoke("ResetFire", _num);
     }
+     public void FireWeapon (                                                                                                                                                                                                                                                               ) {
+        GameData.Instance.currentWeapon.Fire(true);
+        Invoke("EndFireWeapon", GameData.Instance.currentWeapon.data.fireRate);
+     }
+
+     public void EndFireWeapon () {
+        GameData.Instance.currentWeapon.Fire(false);
+     }
 
     void OnWinGame()
     {

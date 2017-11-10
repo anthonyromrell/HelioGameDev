@@ -35,6 +35,7 @@ namespace Weapons
         }
         public void Click()
         {
+            GameData.Instance.currentWeapon = myWeapon;
 
             if (WaitToFire == null)
             {

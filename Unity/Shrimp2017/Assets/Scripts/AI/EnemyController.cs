@@ -64,7 +64,7 @@ public class EnemyController : MonoBehaviour
     {
         StartCoroutine(PlayDamageAnim());
 
-        health -= GameData.Instance.currentWeapon.firePower;
+        health -= GameData.Instance.currentWeapon.data.firePower;
 
         if (health <= 0)
         {

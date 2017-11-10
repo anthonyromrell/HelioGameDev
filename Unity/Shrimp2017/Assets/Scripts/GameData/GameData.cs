@@ -9,7 +9,6 @@ public class GameData
     {
 
     }
-
     public bool hasKey = false;
     public const string playerPrefsIdentifier = "GameData";
     public string playerName;
@@ -18,13 +17,10 @@ public class GameData
     public float health;
     public int coin;
     public Vector3 checkPoint;
-
-
     public int weaponNum;
     public List<WeaponData> weaponList;
     //public 
-    public WeaponData currentWeapon;
-
+    public Weapon currentWeapon;
 
     private static GameData _instance;
     public static GameData Instance
@@ -41,6 +37,7 @@ public class GameData
 
     public static void GetPlayerPrefs()
     {
+
         if (string.IsNullOrEmpty(PlayerPrefs.GetString(playerPrefsIdentifier)))
         {
             _instance = new GameData();
