@@ -7,4 +7,9 @@ namespace Weapons
 		SONICBAT,
 		ELECTROSPEAR
 	}
+
+	public enum AttachType {
+		Melee,
+		Range
+	}
 }

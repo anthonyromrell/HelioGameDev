@@ -14,8 +14,7 @@ public class AnimateCharacter : MonoBehaviour
     public Animator characterAnim;
     public Weapon weapon;
     public GameObject onFX;
-    public WeaponType.weaponSelection currentWeaponType;
-
+   
     void Start()
     {
         Jump();
@@ -29,8 +28,6 @@ public class AnimateCharacter : MonoBehaviour
     private void FireHandler(float _num)
     {
         characterAnim.SetLayerWeight(1, 1);
-        //characterAnim
-        //characterAnim["Player_Fire_Raygun"].speed = GameData.Instance.currentWeapon.data.fireRate]
         characterAnim.SetTrigger("FireWeapon");
     }
      public void FireWeapon (                                                                                                                                                                                                                                                               ) {

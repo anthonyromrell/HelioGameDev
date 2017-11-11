@@ -15,7 +15,7 @@ namespace Weapons
         public static UnityAction<Weapon> SendWeapon;
 
 
-        void Start()
+        void Awake()
         {
             data.name = this.name;
             WeaponAttachPoint.AttachAction += AttachHandler;
@@ -42,6 +42,7 @@ namespace Weapons
         private void AttachHandler(Transform _attachPoint)
         {
             attachPoint = _attachPoint;
+            print(attachPoint);
         }
 
         void Attach()
