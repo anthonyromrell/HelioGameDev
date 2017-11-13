@@ -14,6 +14,11 @@ public class AnimateCharacter : MonoBehaviour
     public Animator characterAnim;
     public Weapon weapon;
     public GameObject onFX;
+    public AudioSource soundFX;
+
+    public void Step () {
+        soundFX.Play();
+    }
    
     void Start()
     {
