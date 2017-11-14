@@ -18,6 +18,8 @@ namespace Weapons
         public static UnityAction<float> CanFire;
         private Coroutine WaitToFire;
 
+        const float V = 0.01f;
+
         void Start()
         {
             Weapon.SendWeapon += WeaponHandler;
@@ -56,7 +58,8 @@ namespace Weapons
             }
             while (weaponBar.fillAmount > tempAmount)
             {
-                weaponBar.fillAmount -= myWeapon.data.fireRate;
+
+                weaponBar.fillAmount -= V;
                 yield return new WaitForFixedUpdate();
             }
             yield return new WaitForSeconds(myWeapon.data.fireRate);
