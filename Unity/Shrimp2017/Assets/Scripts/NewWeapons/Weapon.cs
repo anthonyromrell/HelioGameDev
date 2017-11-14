@@ -23,6 +23,7 @@ namespace Weapons
 
         public void Fire (bool _canFire) {
             fx.SetActive(_canFire);
+            soundFX.Play();
         }
                                                             
 
