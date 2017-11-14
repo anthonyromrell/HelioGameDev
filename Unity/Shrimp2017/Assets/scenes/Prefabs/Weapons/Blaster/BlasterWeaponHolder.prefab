@@ -111,8 +111,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 428592}
-  - component: {fileID: 11428582}
   - component: {fileID: 6528582}
+  - component: {fileID: 82440056345270880}
+  - component: {fileID: 114013434271501616}
   m_Layer: 24
   m_Name: BlasterWeaponHolder
   m_TagString: Untagged
@@ -195,8 +196,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 128590}
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071067}
-  m_LocalPosition: {x: 0.41216087, y: 0, z: 0.1886077}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.41216087, y: 0.12, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children:
   - {fileID: 428584}
@@ -210,7 +211,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 128592}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.6, y: 0, z: -0.06}
+  m_LocalPosition: {x: -8.058, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 428590}
@@ -278,38 +279,6 @@ MonoBehaviour:
   rayImpact: {fileID: 428588}
   rayMuzzle: {fileID: 428586}
   fxOffset: 0
---- !u!114 &11428582
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 128592}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 05a488a31e8c9495eba3695f586a7c76, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  avaliableAmmo: []
-  Targets:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  numberOfTargets: 3
-  currentAmmoNum: 0
-  ammoPower: 1
-  firingDistance: 100
-  AvaliableAmmountToFire: 10
-  setRotation: 0
-  nextActivate: 0.1
-  activationTime: 0
-  ifAvaliable: 0
-  centerFiringPosition: {fileID: 428590}
-  AddedFX: {fileID: 128588}
-  KindOfWeapon: 1
-  thisWeaponSelection: 0
-  waitTime: 0.25
 --- !u!120 &12028580
 LineRenderer:
   m_ObjectHideFlags: 1
@@ -13817,3 +13786,102 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 128592}
   m_IsPrefabParent: 1
+--- !u!82 &82440056345270880
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 128592}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: b83ae578109b4e649954a27ddbeffe05, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+--- !u!114 &114013434271501616
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 128592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df5f34d319a3f4f188acb6654083e5b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data:
+    firePower: 0.1
+    fireRate: 0.3
+    totalAmmo: 1
+    name: 
+    weaponType: 0
+  fx: {fileID: 128588}
+  soundFX: {fileID: 82440056345270880}

@@ -43,7 +43,6 @@ namespace Weapons
         private void AttachHandler(Transform _attachPoint)
         {
             attachPoint = _attachPoint;
-            print(attachPoint);
         }
 
         void Attach()

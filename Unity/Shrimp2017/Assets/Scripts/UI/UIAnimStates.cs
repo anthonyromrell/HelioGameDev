@@ -18,8 +18,6 @@ public class UIAnimStates : MonoBehaviour
 
     public void OnCanPlay()
     {
-		print("play");
-      //  CanPlay();
     }
 
     public void OnEnd()

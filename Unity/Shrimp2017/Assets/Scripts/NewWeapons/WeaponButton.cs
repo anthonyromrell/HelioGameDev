@@ -17,7 +17,6 @@ namespace Weapons
         public Color activeColor = Color.yellow;
         public static UnityAction<float> CanFire;
         private Coroutine WaitToFire;
-
         const float V = 0.01f;
 
         void Start()
@@ -58,7 +57,6 @@ namespace Weapons
             }
             while (weaponBar.fillAmount > tempAmount)
             {
-
                 weaponBar.fillAmount -= V;
                 yield return new WaitForFixedUpdate();
             }
