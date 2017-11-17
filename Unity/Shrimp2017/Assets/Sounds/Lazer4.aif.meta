@@ -3,6 +3,7 @@ guid: b83ae578109b4e649954a27ddbeffe05
 timeCreated: 1510598038
 licenseType: Pro
 AudioImporter:
+  externalObjects: {}
   serializedVersion: 6
   defaultSettings:
     loadType: 0
@@ -11,11 +12,19 @@ AudioImporter:
     compressionFormat: 1
     quality: 1
     conversionMode: 0
-  platformSettingOverrides: {}
+  platformSettingOverrides:
+    7:
+      loadType: 0
+      sampleRateSetting: 0
+      sampleRateOverride: 44100
+      compressionFormat: 3
+      quality: 1
+      conversionMode: 0
   forceToMono: 0
   normalize: 1
   preloadAudioData: 1
-  loadInBackground: 0
+  loadInBackground: 1
+  ambisonic: 0
   3D: 1
   userData: 
   assetBundleName: 
