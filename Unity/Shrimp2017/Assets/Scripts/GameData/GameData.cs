@@ -2,25 +2,26 @@ using UnityEngine;
 using System.Collections.Generic;
 using Weapons;
 
-[System.Serializable]
-public class GameData
+[CreateAssetMenu]
+
+public class GameData : ScriptableObject
 {
-    GameData()
+    private GameData()
     {
 
     }
-    public bool hasKey = false;
-    public const string playerPrefsIdentifier = "GameData";
-    public string playerName;
-    public int totalScore;
-    public int lives;
-    public float health;
-    public int coin;
-    public Vector3 checkPoint;
-    public int weaponNum;
-    public List<WeaponData> weaponList;
+    public bool HasKey = false;
+    public const string PlayerPrefsIdentifier = "GameData";
+    public string PlayerName;
+    public int TotalScore;
+    public int Lives;
+    public float Health;
+    public int Coin;
+    public Vector3 CheckPoint;
+    public int WeaponNum;
+    public List<WeaponData> WeaponList;
     //public 
-    public Weapon currentWeapon;
+    public Weapon CurrentWeapon;
 
     private static GameData _instance;
     public static GameData Instance
@@ -38,23 +39,35 @@ public class GameData
     public static void GetPlayerPrefs()
     {
 
-        if (string.IsNullOrEmpty(PlayerPrefs.GetString(playerPrefsIdentifier)))
+        if (string.IsNullOrEmpty(PlayerPrefs.GetString(PlayerPrefsIdentifier)))
         {
-            _instance = new GameData();
+            _instance = ScriptableObject.CreateInstance<GameData>();
         }
         else
         {
-            _instance = JsonUtility.FromJson<GameData>(PlayerPrefs.GetString(playerPrefsIdentifier));
+            JsonUtility.FromJsonOverwrite(PlayerPrefs.GetString(PlayerPrefsIdentifier), _instance);
         }
     }
 
+    private void Awake()
+    {
+        Debug.Log(this);
+    }
+
+    
     public static void SetPlayerPrefs()
     {
-        PlayerPrefs.SetString(playerPrefsIdentifier, JsonUtility.ToJson(_instance));
+        PlayerPrefs.SetString(PlayerPrefsIdentifier, JsonUtility.ToJson(_instance));
     }
     public void SaveData()
     {
-        string gameDataAsJson = JsonUtility.ToJson(this);
-        PlayerPrefs.SetString(playerPrefsIdentifier, gameDataAsJson);
+        var gameDataAsJson = JsonUtility.ToJson(this);
+        PlayerPrefs.SetString(PlayerPrefsIdentifier, gameDataAsJson);
+    }
+    
+  
+    public void NewGameData (GameData gameData) {
+  
+        _instance = gameData;
     }
 }

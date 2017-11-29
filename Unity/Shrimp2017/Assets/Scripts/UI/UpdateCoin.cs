@@ -13,7 +13,7 @@ public class UpdateCoin : MonoBehaviour {
 		coinUI = GetComponent<Text>();
 		CoinPowerUp.UpdateCoin += CoinHandler;
 		CharacterHealthKiller.CoinPowerDown += CoinHandler;
-		coinUI.text = GameData.Instance.coin.ToString("N0", CultureInfo.CurrentCulture);
+		coinUI.text = GameData.Instance.Coin.ToString("N0", CultureInfo.CurrentCulture);
 	}
 	
 	void CoinHandler (int _coinValue) {
@@ -29,21 +29,21 @@ public class UpdateCoin : MonoBehaviour {
 	}
 
 	IEnumerator SubtractCoinValue (int _coinValue) {
-		int tempCoinValue = GameData.Instance.coin + _coinValue;
-		while (GameData.Instance.coin > tempCoinValue)
+		int tempCoinValue = GameData.Instance.Coin + _coinValue;
+		while (GameData.Instance.Coin > tempCoinValue)
 		{
-			GameData.Instance.coin--;
-			coinUI.text = GameData.Instance.coin.ToString("N0", CultureInfo.CurrentCulture);
+			GameData.Instance.Coin--;
+			coinUI.text = GameData.Instance.Coin.ToString("N0", CultureInfo.CurrentCulture);
 			yield return new WaitForFixedUpdate();
 		}
 	}
 
 	IEnumerator AddCoinValue (int _coinValue) {
-		int tempCoinValue = GameData.Instance.coin + _coinValue;
-		while (GameData.Instance.coin < tempCoinValue)
+		int tempCoinValue = GameData.Instance.Coin + _coinValue;
+		while (GameData.Instance.Coin < tempCoinValue)
 		{
-			GameData.Instance.coin++;
-			coinUI.text = GameData.Instance.coin.ToString("N0", CultureInfo.CurrentCulture);
+			GameData.Instance.Coin++;
+			coinUI.text = GameData.Instance.Coin.ToString("N0", CultureInfo.CurrentCulture);
 			yield return new WaitForFixedUpdate();
 		}
 	}

@@ -34,7 +34,8 @@ namespace Weapons
         void OnTriggerEnter(Collider other)
         {
             SendWeapon(this);
-            GameData.Instance.weaponNum++;
+            GameData.Instance.WeaponNum++;
+            GameData.Instance.WeaponList.Add(this.data);
             GetComponent<BoxCollider>().enabled = false;
             transform.parent = attachPoint.transform;
             Invoke("Attach", 0.25f);
@@ -53,7 +54,7 @@ namespace Weapons
 
         void OnApplicationQuit()
         {
-            GameData.Instance.weaponNum = 0;
+            GameData.Instance.WeaponNum = 0;
         }
     }
 }

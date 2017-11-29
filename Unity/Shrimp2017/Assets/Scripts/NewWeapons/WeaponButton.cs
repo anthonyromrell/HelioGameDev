@@ -26,7 +26,7 @@ namespace Weapons
         }
         private void WeaponHandler(Weapon _weapon)
         {
-            if (GameData.Instance.weaponNum == weaponNum)
+            if (GameData.Instance.WeaponNum == weaponNum)
             {
                 myWeapon = _weapon;
                 button.color = activeColor;
@@ -36,7 +36,7 @@ namespace Weapons
         }
         public void Click()
         {
-            GameData.Instance.currentWeapon = myWeapon;
+            GameData.Instance.CurrentWeapon = myWeapon;
 
             if (WaitToFire == null)
             {

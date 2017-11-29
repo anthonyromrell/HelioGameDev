@@ -7,6 +7,8 @@ public class GameDataView : MonoBehaviour {
 
 	void Awake()
 	{
+		if(myData != null)
+			myData.NewGameData(myData);
 		GetData();
 	}
 
